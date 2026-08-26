@@ -1,0 +1,70 @@
+# ============================================================
+# NetBeans Build Output
+# ============================================================
+# ไฟล์ที่ compile แล้ว ไม่ต้อง commit เพราะ regenerate ได้เสมอ
+NetBeansProjects/JavaApplication2/build/
+NetBeansProjects/JavaApplication2/dist/
+NetBeansProjects/JavaApplication2/test/
+
+# ============================================================
+# NetBeans Private / User-Specific Config
+# ============================================================
+# config ส่วนตัวของแต่ละเครื่อง ไม่ควรแชร์
+NetBeansProjects/JavaApplication2/nbproject/private/
+nbproject/private/
+
+# ============================================================
+# Generated Receipts (Runtime Output)
+# ============================================================
+# ใบเสร็จ PDF ที่ generate ขณะ run โปรแกรม
+NetBeansProjects/JavaApplication2/receipts/
+receipts/
+
+# ============================================================
+# Java Compiled Files
+# ============================================================
+*.class
+*.jar
+# ยกเว้น JARs ใน addon/ ที่เป็น dependency ของโปรเจ็ค
+# (ถ้าจะ ignore ทั้งหมดให้ลบบรรทัดด้านล่างออก)
+# !addon/*.jar
+
+# ============================================================
+# Logs & Temp Files
+# ============================================================
+*.log
+*.tmp
+*.swp
+*.bak
+
+# ============================================================
+# OS-Specific Files
+# ============================================================
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+
+# ============================================================
+# IDE - IntelliJ IDEA (ถ้ามีการใช้งานร่วมกัน)
+# ============================================================
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# ============================================================
+# Environment / Secrets
+# ============================================================
+# ถ้าในอนาคตมีไฟล์ config ที่เก็บ password ให้เพิ่มที่นี่
+# .env
+# config.properties
