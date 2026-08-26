@@ -1,24 +1,24 @@
-# 🏋️ Gym Management System
+# Gym Management System
 
 ระบบจัดการยิมพัฒนาด้วย Java Swing เชื่อมต่อฐานข้อมูล MySQL เหมาะสำหรับใช้งานจริงในธุรกิจยิมขนาดเล็กถึงกลาง รองรับการจัดการสมาชิก, การชำระเงิน, การ Check-in/Check-out, Dashboard สรุปรายงาน และระบบตั้งค่า
 
 ---
 
-## ✨ Features
+## Features
 
 | ฟีเจอร์ | รายละเอียด |
 |---|---|
-| 🔐 Login | ระบบล็อกอินสำหรับผู้ดูแล พร้อม animation fade-in |
-| 📊 Dashboard | แสดงสถิติสมาชิก, รายได้, และ capacity ของยิมแบบ real-time |
-| ✅ Check-in / Check-out | บันทึกเวลาเข้า-ออกของสมาชิกพร้อม log รายวัน |
-| 💰 Cashier | รับชำระค่าสมาชิก, คำนวณทอน, ออกใบเสร็จ PDF อัตโนมัติ |
-| 👥 Member | เพิ่ม/แก้ไข/ลบสมาชิก, กำหนดแพ็กเกจ, ดูสถานะ Active/Expired |
-| ⚙️ Settings | ตั้งค่า capacity สูงสุดของยิม |
-| 🖨️ Receipt PDF | สร้างใบเสร็จ PDF โดยอัตโนมัติหลังชำระเงินสำเร็จ |
+| Login | ระบบล็อกอินสำหรับผู้ดูแล พร้อม animation fade-in |
+| Dashboard | แสดงสถิติสมาชิก, รายได้, และ capacity ของยิมแบบ real-time |
+| Check-in / Check-out | บันทึกเวลาเข้า-ออกของสมาชิกพร้อม log รายวัน |
+| Cashier | รับชำระค่าสมาชิก, คำนวณทอน, ออกใบเสร็จ PDF อัตโนมัติ |
+| Member | เพิ่ม/แก้ไข/ลบสมาชิก, กำหนดแพ็กเกจ, ดูสถานะ Active/Expired |
+| Settings | ตั้งค่า capacity สูงสุดของยิม |
+| Receipt PDF | สร้างใบเสร็จ PDF โดยอัตโนมัติหลังชำระเงินสำเร็จ |
 
 ---
 
-## 🗂️ Project Structure
+## Project Structure
 
 ```
 Gym-Management-System/
@@ -47,24 +47,24 @@ Gym-Management-System/
         │       ├── event/             # Event listeners
         │       ├── icon/              # Icon resources
         │       └── swing/             # Custom Swing components
-        ├── build/                 # ⚠️ ไฟล์ที่ compile แล้ว (ไม่ควร commit)
-        ├── dist/                  # ⚠️ ไฟล์ .jar ที่ build แล้ว (ไม่ควร commit)
-        ├── receipts/              # ⚠️ ใบเสร็จ PDF ที่สร้างขึ้นขณะใช้งาน (ไม่ควร commit)
-        ├── nbproject/private/     # ⚠️ NetBeans private config (ไม่ควร commit)
+        ├── build/                 # [!] ไฟล์ที่ compile แล้ว (ไม่ควร commit)
+        ├── dist/                  # [!] ไฟล์ .jar ที่ build แล้ว (ไม่ควร commit)
+        ├── receipts/              # [!] ใบเสร็จ PDF ที่สร้างขึ้นขณะใช้งาน (ไม่ควร commit)
+        ├── nbproject/private/     # [!] NetBeans private config (ไม่ควร commit)
         ├── build.xml              # Ant build script
         └── manifest.mf            # JAR manifest
 ```
 
 ---
 
-## 🗄️ Database Schema
+## Database Schema
 
 ใช้ **MySQL / MariaDB** ฐานข้อมูลชื่อ `gym_db` ประกอบด้วย 6 ตาราง
 
 | ตาราง | รายละเอียด |
 |---|---|
 | `member` | ข้อมูลสมาชิก (ชื่อ, เพศ, เบอร์โทร, email, วันหมดอายุ, สถานะ) |
-| `package` | แพ็กเกจสมาชิก (Daily 60฿ / Monthly 2,700฿ / Yearly 30,000฿) |
+| `package` | แพ็กเกจสมาชิก (Daily 60 บาท / Monthly 2,700 บาท / Yearly 30,000 บาท) |
 | `payment` | บันทึกการชำระเงิน (จำนวน, ทอน, วิธีชำระ, path ใบเสร็จ) |
 | `checkin_log` | บันทึก Check-in / Check-out ของสมาชิก |
 | `gym_setting` | ค่าตั้งต้น (max_capacity, current_capacity) |
@@ -73,7 +73,7 @@ Gym-Management-System/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -129,11 +129,11 @@ private static final String PASSWORD = "";        // แก้ไข password �
 | Username | `admin` |
 | Password | `1234` |
 
-> ⚠️ **คำเตือน**: ควรเปลี่ยน password หลังจาก deploy ใช้งานจริง
+> **หมายเหตุ**: ควรเปลี่ยน password หลังจาก deploy ใช้งานจริง
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Technology | รายละเอียด |
 |---|---|
@@ -150,6 +150,6 @@ private static final String PASSWORD = "";        // แก้ไข password �
 
 ---
 
-## 📋 License
+## License
 
 โปรเจ็คนี้เป็น Academic Project สำหรับการเรียนการสอน วิชา Java OOP
